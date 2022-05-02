@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>黃子齊</title>
+<link rel="icon" type="image/x-icon" href="me.ico">
+<style type="text/css">
+    a:hover{
+      color:red;
+    }
+    body { background-color: lightyellow}
+    </style>
+</head>
+    
+
+<input type="text" id="DateTime">
+<br><br>
+<script>
+    function clock(){
+        function zero(x) {
+            if (x < 10) {x = "0" + x}
+            return x;
+        }
+        var today = new Date();
+        var date = (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
+        var time = zero(today.getHours()) + ":" + zero(today.getMinutes()) + ":" + zero(today.getSeconds());
+        document.getElementById("DateTime").value = date+' '+time;
+        setTimeout('clock()',1000);
+    }
+    
+    </script>
+<audio controls autoplay loop>
+    <source type="audio/mpeg" src="music.mp3">
+    </audio>
+<body>
+<body onload="clock()">
+
+    
+<h1>黃子齊 Huang Tzu-Chi</h1>
+<img src="me.jpg"
+     width="150"
+     height="190">
+<h2>biography</h2>
+<p>我是黃子齊，出生於2002年4月11日，高中就讀於
+    <a href="https://www.hs.ntnu.edu.tw/">國立臺灣師範大學附屬高級中學</a>,
+    目前就讀於
+    <a href="https://web.ee.ntu.edu.tw/">國立台灣大學電機工程學系</a>，
+    一年級是
+    <a href="http://www.me.ntu.edu.tw/main.php">國立台灣大學機械工程學系</a>學生,
+    於二年級轉系進入電機工程學系。
+    </p>
+<h2>hobby</h2>
+<p>1.<a href="https://zh.wikipedia.org/wiki/%E4%B9%92%E4%B9%93%E7%90%83">桌球</a><br>
+    2.<a href="https://www.cpbl.com.tw/">中華職棒</a><br>
+    3.<a href="https://www.brothers.tw/">中信兄弟</a>
+    </p>
+
+</body>
+
+</html>
